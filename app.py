@@ -17,7 +17,7 @@ if st.button("Predict"):
         try:
             # Send the user's review to the FastAPI backend for prediction
             response = requests.post(
-                "http://127.0.0.1:8000/predict/",
+                "https://sentiment-analysis-project-1-l46u.onrender.com/predict/",
                 json={"review": review_text}
             )
 
